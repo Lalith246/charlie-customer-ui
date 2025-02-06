@@ -19,9 +19,9 @@ function App() {
           { text: "Hey there! Charlie here, I am here to assist you for all your queries related to Commvault." }
         ]);
       }, 1000);
-      disconnect();
-    } else {
       connect();
+    } else {
+      disconnect();
     }
   };
 
@@ -55,22 +55,6 @@ function App() {
                 {isCallActive ? 'In Call' : 'Available'}
               </p>
             </div>
-          </div>
-
-          {/* Messages Area */}
-          <div className="mt-6 space-y-4 h-48 overflow-y-auto bg-gray-50 p-4 rounded-lg">
-            {messageArray.map((message, index) => (
-              <div
-                key={index}
-                className={`flex justify-start`}
-              >
-                <div
-                  className={`rounded-lg px-4 py-2 max-w-[80%] ${isCallActive ? 'bg-indigo-100' : 'bg-gray-50'} text-white}`}
-                >
-                  {isCallActive ? `${message.text}` : null}
-                </div>
-              </div>
-            ))}
           </div>
 
           {/* Call Controls */}
