@@ -30,8 +30,8 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-items-center  bg-gradient-to-br from-customColor to-indigo-100 p-4">
-      <div className="mx-auto w-1/4 bg-white rounded-xl shadow-lg overflow-hidden">
+    <div className="h-screen flex items-center justify-items-center bg-gradient-to-br from-customColor to-indigo-100 p-4">
+      <div className="mx-auto w-2/4 bg-white rounded-xl shadow-lg overflow-hidden h-3/4">
         {/* Header */}
         <div className="bg-gray-100 p-6 text-black text-center">
           <div className="flex items-center justify-center gap-2 mb-2">
@@ -42,10 +42,10 @@ function App() {
         </div>
 
         {/* Call Status */}
-        <div className="p-6">
+        <div className="h-3/4 p-6 py-36">
           <div className="flex flex-col items-center gap-4">
-            <div className="w-24 h-24 rounded-full bg-gray-100 flex items-center justify-center">
-              <div className="w-12 h-12">
+            <div className="w-40 h-40 rounded-full bg-gray-100 flex items-center justify-center">
+              <div className="w-20 h-20">
                 <img src={cvLogo} alt="" className='bg-white' />
               </div>
             </div>
